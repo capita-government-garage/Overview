@@ -1693,6 +1693,9 @@ font-weight: 700;
   #intro h2 {
     font-size: 28px;
   }
+#intro h5{
+  font-size:15px;
+}
 
   #nav-menu-container {
     display: none;
