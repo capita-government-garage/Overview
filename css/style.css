@@ -960,33 +960,33 @@ max-height:100%;
   transition: .9s;
 }
 
-/* Facts Section
+/* school Section
 --------------------------------*/
 
-#facts {
-  background: url("../img/facts-bg.jpg") center top no-repeat fixed;
+#school {
+  background: url("../img/code.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 0 0;
   position: relative;
 }
 
-#facts::before {
+#school::before {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.58);
   z-index: 9;
 }
 
-#facts .container {
+#school .container {
   position: relative;
   z-index: 10;
 }
 
-#facts .counters span {
+#school .counters span {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 48px;
@@ -994,7 +994,7 @@ max-height:100%;
   color: #18d26e;
 }
 
-#facts .counters p {
+#school .counters p {
   padding: 0;
   margin: 0 0 20px 0;
   font-family: "Montserrat", sans-serif;
@@ -1002,10 +1002,40 @@ max-height:100%;
   color: #111;
 }
 
-#facts .facts-img {
+#school .facts-img {
   text-align: center;
   padding-top: 30px;
 }
+
+#school .progress {
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+#school .progress .skill {
+  font-family: "Open Sans", sans-serif;
+  line-height: 35px;
+  padding: 0;
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+}
+
+#school .progress .skill .val {
+  float: right;
+  font-style: normal;
+  margin: 0 20px 0 0;
+}
+
+#school .progress-bar {
+  width: 1px;
+  text-align: left;
+  transition: .9s;
+}
+
+
+
+
+
 
 /* Portfolio Section
 --------------------------------*/
@@ -1704,4 +1734,142 @@ font-weight: 700;
   #mobile-nav-toggle {
     display: inline;
   }
+}
+
+
+
+
+
+
+#gallery {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+}
+
+#gallery .carousel-item {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#gallery .carousel-item::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#gallery .carousel-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#gallery .carousel-background img {
+  max-width: 100%;
+}
+
+#gallery .carousel-content {
+  text-align: center;
+}
+
+#gallery h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#gallery p {
+  width: 80%;
+  margin: 0 auto 30px auto;
+  color: #fff;
+}
+
+#gallery .carousel-fade {
+  overflow: hidden;
+}
+
+#gallery .carousel-fade .carousel-inner .carousel-item {
+  transition-property: opacity;
+}
+
+#gallery .carousel-fade .carousel-inner .carousel-item,
+#gallery .carousel-fade .carousel-inner .active.carousel-item-left,
+#gallery .carousel-fade .carousel-inner .active.carousel-item-right {
+  opacity: 0;
+}
+
+#gallery .carousel-fade .carousel-inner .active,
+#gallery .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
+#gallery .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#gallery .carousel-fade .carousel-inner .carousel-item-next,
+#gallery .carousel-fade .carousel-inner .carousel-item-prev,
+#gallery .carousel-fade .carousel-inner .active.carousel-item-left,
+#gallery .carousel-fade .carousel-inner .active.carousel-item-right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+#gallery .carousel-control-prev,
+#gallery .carousel-control-next {
+  width: 10%;
+}
+
+#gallery .carousel-control-next-icon,
+#gallery .carousel-control-prev-icon {
+  background: none;
+  font-size: 32px;
+  line-height: 1;
+}
+
+#gallery .carousel-indicators li {
+  cursor: pointer;
+}
+
+#gallery .btn-get-started {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+  background: #18d26e;
+}
+
+#gallery .btn-get-started:hover {
+  background: #fff;
+  color: #18d26e;
 }
