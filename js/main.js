@@ -128,11 +128,11 @@
 
   $(window).on('scroll', function () {
     var cur_pos = $(this).scrollTop();
-  
+
     nav_sections.each(function() {
       var top = $(this).offset().top - main_nav_height,
           bottom = top + $(this).outerHeight();
-  
+
       if (cur_pos >= top && cur_pos <= bottom) {
         main_nav.find('li').removeClass('menu-active menu-item-active');
         main_nav.find('a[href="#'+$(this).attr('id')+'"]').parent('li').addClass('menu-active menu-item-active');
@@ -186,6 +186,34 @@
     portfolioIsotope.isotope({ filter: $(this).data('filter') });
   });
 
+  // Teams isotope and filter
+  var teamIsotope = $('.team-container').isotope({
+    itemSelector: '.team-item',
+    layoutMode: 'fitRows'
+  });
+
+  $('#team-flters li').on( 'click', function() {
+    $("#team-flters li").removeClass('filter-active');
+    $(this).addClass('filter-active');
+
+    teamIsotope.isotope({ filter: $(this).data('filter') });
+  });
+
+  var sectIsotope = $('.team-container').isotope({
+    itemSelector: '.team-item',
+    layoutMode: 'fitRows'
+  });
+
+  $('#sect-flters li').on( 'click', function() {
+    $("#sect-flters li").removeClass('filter-active');
+    $(this).addClass('filter-active');
+  
+    sectIsotope.isotope({ filter: $(this).data('filter') });
+  });
+
+
+
+
   // Clients carousel (uses the Owl Carousel library)
   $(".clients-carousel").owlCarousel({
     autoplay: true,
@@ -204,4 +232,3 @@
   });
 
 })(jQuery);
-
