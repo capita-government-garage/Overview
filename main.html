@@ -26,6 +26,52 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/mainstyle.css" rel="stylesheet">
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script>
+  $.ajax({
+    url : "who.json",
+    type : "GET", // whichever you like
+    contentType:"application/json",
+    success : function(list)
+    {
+
+
+        var divCol  = "  <div class='col-lg-2 col-md-6 filter-cons filter-gov team-item wow fadeInUp'>";
+        var divMember = "<div class='member'>";
+        var img =   "<img src='img/team/Jack.jpg' class='img-fluid' alt=''>";
+        var divInfo ="<div class='member-info'>"
+        var divContent ="<div class='member-info-content'>"
+        var divClose= "</div>";
+var list =JSON.parse(list);
+
+        for (i in list){
+
+console.log(list);
+
+            var name     = "<h4>"      + list[i].name    + "</h4>";
+            var title = "<span>" + list[i].title + "<span>";
+            var img = "<img src='"+list[i].img+"' class='img-fluid' alt=''>";
+var areas=list[i].areas
+
+            var div = divCol    +
+                        divMember     +
+                            img +
+                            divInfo       +
+                              divContent       +
+                                  name       +
+                                  title      +
+                        divClose +
+                      divClose;
+                    divClose +
+
+            $('.team-container').append(div); // insert the div you've just created
+
+        }
+    }
+});
+
+  </script>
+
 
   <!-- =======================================================
     Theme Name: BizPage
@@ -322,7 +368,7 @@
         </div>
 
 
-        <div class="row team-container">
+        <div id="members" class="row team-container">
 
           <div class="col-lg-2 col-md-6 filter-lead team-item wow fadeInUp">
             <div class="member">
@@ -720,13 +766,15 @@
   <!-- <div id="preloader"></div> -->
 
   <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
+
+
   <script src="lib/jquery/jquery-migrate.min.js"></script>
+
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="lib/easing/easing.min.js"></script>
   <script src="lib/superfish/hoverIntent.js"></script>
   <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
+
   <script src="lib/waypoints/waypoints.min.js"></script>
   <script src="lib/counterup/counterup.min.js"></script>
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
@@ -737,7 +785,12 @@
   <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
+
+  <script src="lib/wow/wow.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
 
 </body>
 </html>
