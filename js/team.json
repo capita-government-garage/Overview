@@ -1,0 +1,51 @@
+{teamData:
+[
+{
+"Name":"Patrick Gormley",
+"Title":"Head of Capita Consulting",
+"Roles":[{
+  "Leadership":"y",
+  "Experience":"n",
+  "DataScience":"n",
+  "Engineering":"n",
+  "People":"n",
+  "Consulting":"y",
+  }],
+"Sectors":[{
+  "Finance":"y",
+  "Government":"y",
+  "Utilities":"y",
+  "IoT":"y",
+  "Automation":"y",
+  }],
+"Imageurl":"",
+"Description":"",
+}
+{
+"Name":"Doug Brown",
+"Title":"Head of Data Science",
+"Roles":[{
+  "Leadership":"y",
+  "Experience":"n",
+  "DataScience":"y",
+  "Engineering":"n",
+  "People":"n",
+  "Consulting":"n",
+  }],
+"Sectors":[{
+  "Finance":"n",
+  "Government":"n",
+  "Utilities":"n",
+  "IoT":"n",
+  "Automation":"n",
+  }],
+"Imageurl":"",
+"Description":"",
+  }
+
+
+
+]
+
+
+}

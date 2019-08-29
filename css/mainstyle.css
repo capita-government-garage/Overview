@@ -1200,7 +1200,7 @@ max-height:100%;
 
 #team #team-flters {
   padding: 0;
-  margin: 5px 0 35px 0;
+  margin: 5px 0 5px 0;
   list-style: none;
   text-align: center;
 }
@@ -1229,6 +1229,7 @@ max-height:100%;
 #team #team-flters li:last-child {
   margin-right: 0;
 }
+
 
 
 
@@ -1272,6 +1273,7 @@ max-height:100%;
   margin-bottom: 20px;
   background: #fff;
   position: relative;
+
 }
 
 #team .member .member-info {
@@ -1294,7 +1296,7 @@ max-height:100%;
   left: 0;
   right: 0;
   transition: 0.2s;
-  background:rgb(0,0,0,0.5);
+  background:rgba(0,91,130,0.1);
 }
 
 #team .member .member-info-content {
@@ -1303,9 +1305,9 @@ max-height:100%;
 }
 
 #team .member:hover .member-info {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgb(0,91,130,0.7);
   opacity: 1;
-  transition: 0.4s;
+  transition: 0.6s;
 }
 
 #team .member:hover .member-info-content {
@@ -1313,12 +1315,24 @@ max-height:100%;
   transition: margin 0.4s;
 }
 
-#team .member h4 {
+#team .member h4, a {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
   color: #fff;
 }
+
+
+#team a:hover,
+a:active,
+a:focus {
+  color: #91004b;
+  outline: none;
+  text-decoration: none;
+}
+
+
+
 
 #team .member span {
   font-style: italic;

@@ -194,9 +194,11 @@
 
   $('#team-flters li').on( 'click', function() {
     $("#team-flters li").removeClass('filter-active');
+    $("#sect-flters li").removeClass('filter-active');
     $(this).addClass('filter-active');
 
     teamIsotope.isotope({ filter: $(this).data('filter') });
+
   });
 
   var sectIsotope = $('.team-container').isotope({
@@ -206,9 +208,13 @@
 
   $('#sect-flters li').on( 'click', function() {
     $("#sect-flters li").removeClass('filter-active');
+    $("#team-flters li").removeClass('filter-active');
     $(this).addClass('filter-active');
-  
+
+
+
     sectIsotope.isotope({ filter: $(this).data('filter') });
+
   });
 
 
