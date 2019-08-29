@@ -30,7 +30,7 @@
   <script>
   $.ajax({
     url : "who.json",
-    type : "GET", // whichever you like
+    type : "GET", 
     contentType:"application/json",
     success : function(list)
     {
@@ -38,7 +38,6 @@
 
         var divCol  = "  <div class='col-lg-2 col-md-6 filter-cons filter-gov team-item wow fadeInUp'>";
         var divMember = "<div class='member'>";
-        var img =   "<img src='img/team/Jack.jpg' class='img-fluid' alt=''>";
         var divInfo ="<div class='member-info'>"
         var divContent ="<div class='member-info-content'>"
         var divClose= "</div>";
@@ -64,7 +63,7 @@ var areas=list[i].areas
                       divClose;
                     divClose +
 
-            $('.team-container').append(div); // insert the div you've just created
+            $('.team-container').append(div);
 
         }
     }
