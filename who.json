@@ -1,0 +1,13 @@
+[{
+  "name":"richard knights",
+  "title": "managing principle",
+    "img": "img/team/TomH.png",
+    "areas": "filter-cons filter-gov"
+  },
+  {
+  "name":"Tom heywood",
+  "title":"Managing Principle",
+  "img": "img/team/Oli.jpg",
+  "areas": "filter-cons filter-gov"
+  }
+];
