@@ -2,13 +2,15 @@
     "name": "New App 1",
     "subtitle": "Some details",
     "img": "img/team/TomH.png",
-    "sectors": "filter-card"
+    "sectors": "filter-card",
+    "details": "We can add loads of details about each of the CVPS here, and it is then rendered in the Modal"
   },
   {
     "name": "New App 2",
     "subtitle": "More details",
-    "img": "img/team/Oli.jpg",
-    "sectors": "filter-app"
+    
+    "sectors": "filter-app",
+    "details": "Another example details about each of the CVPS here, and it is then rendered in the Modal"
   },
 
   {
